@@ -1,0 +1,42 @@
+//Int declerations words relay,led,mosfet etc.
+int Relay = 4;
+int Relay2 = 5;
+int Mosfet = 6;
+int Mosfet2 = 7;
+
+//Basic Setup here
+void setup() 
+{  
+
+//Declare Pinmodes and I/O
+pinMode(Relay, OUTPUT);//Set Pin4 as output 
+pinMode(Relay2, OUTPUT);//Set Pin5 as output 
+pinMode(Mosfet, OUTPUT);//Set Pin6 as output
+pinMode(Mosfet2, OUTPUT);//Set Pin7 as output
+}
+//Void Loop
+void loop()
+{
+
+//Digital Read/write,Pin States,Delays
+
+digitalWrite(Relay, HIGH);//Turn on relay 
+delay(5000); 
+digitalWrite(Relay, LOW);//Turn off relay 
+delay(5000); 
+
+digitalWrite(Relay2, HIGH);//Turn on relay2
+delay(5000); 
+digitalWrite(Relay2, LOW);//Turn off relay2 
+delay(5000); 
+
+digitalWrite(Mosfet, HIGH);//Turn on Mosfet
+delay(10000); 
+digitalWrite(Mosfet, LOW);//Turn off Mosfet
+delay(10000); 
+
+digitalWrite(Mosfet2, HIGH);//Turn on Mosfet2
+delay(10000); 
+digitalWrite(Mosfet2, LOW);//Turn off Mosfet2
+delay(10000); 
+}
